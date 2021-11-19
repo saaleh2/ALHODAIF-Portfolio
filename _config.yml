@@ -39,6 +39,7 @@ baseurl: "/ALHODAIF-Portfolio" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
+    linkedin_username: saleh-alhodaif
     twitter: salehalhodaif2
     github: saaleh2
 
