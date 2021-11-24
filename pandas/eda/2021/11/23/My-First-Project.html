@@ -1016,10 +1016,10 @@ In general, we want to know when users visit the store, and whether their behavi
 <span class="n">ses_st_end</span> <span class="o">=</span> <span class="n">clean_dataset</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;user_session&#39;</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
     <span class="n">min_</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;event_time&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">),</span> <span class="n">max_</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;event_time&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">))</span>
 <span class="c1"># subtract end from start to get session duration</span>
-<span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;ses_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;max_&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;min_&#39;</span><span class="p">]</span>
+<span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;session_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;max_&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">ses_st_end</span><span class="p">[</span><span class="s1">&#39;min_&#39;</span><span class="p">]</span>
 <span class="c1"># select only needed columns</span>
-<span class="n">ses_duration</span> <span class="o">=</span> <span class="n">ses_st_end</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;user_session&#39;</span><span class="p">,</span> <span class="s1">&#39;ses_duration&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span>
-    <span class="s1">&#39;ses_duration&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ses_duration</span> <span class="o">=</span> <span class="n">ses_st_end</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;user_session&#39;</span><span class="p">,</span> <span class="s1">&#39;session_duration&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span>
+    <span class="s1">&#39;session_duration&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">ses_duration</span>
 </pre></div>
 
@@ -1054,7 +1054,7 @@ In general, we want to know when users visit the store, and whether their behavi
     <tr style="text-align: right;">
       <th></th>
       <th>user_session</th>
-      <th>ses_duration</th>
+      <th>session_duration</th>
     </tr>
   </thead>
   <tbody>
