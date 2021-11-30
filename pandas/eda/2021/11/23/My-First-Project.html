@@ -160,7 +160,7 @@ the dataset has been separated into five files, each file contains events for an
 <h1 id="For-non-technicals">For non-technicals<a class="anchor-link" href="#For-non-technicals"> </a></h1><p>Before starting this analysis I will explain some technical terms so they become easy to digest while reading this post.</p>
 <ul>
 <li>### events record
-First of all, what is <strong>event</strong>?$~~$ an <strong>event</strong> is a recoded action of a user in apps and websites.<br />
+First of all, what is <strong>event</strong>?&emsp;an <strong>event</strong> is a recoded action of a user in apps and websites.<br />
 So each click you do in apps and websites will be recorded for future analysis and other purposes.<br />
 The following example is simplifying how events recorded in a databases:    </li>
 </ul>
@@ -279,13 +279,21 @@ The following example is simplifying how events recorded in a databases:    </li
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>### How to read the table's data
-The first column <code>event time</code> records when the event happened. The second column <code>event type</code> specify what the user did. <code>product id</code>, <code>category id</code>, and <code>user id</code> columns are always represented in numbers, but here we used text instead to simplify it.  It's easier for computers to use numbers rather than texts especially when there are duplicates, like when two users have the same name.<br />
+<li><strong>How to read the table's data?</strong><br />
+The <code>event time</code> column  records when the event happened. And the <code>event type</code> column  specify what the user did. <code>product id</code>, <code>category id</code>, and <code>user id</code> columns are always represented in numbers, but here we used text instead to simplify it.  It's easier for computers to use numbers rather than texts especially when there are duplicates, like when two users have the same name.<br />
 #### Sessions
-The last column <code>user session</code> needs first some explanation of <strong>session</strong> term meaning.<br />
+The <code>user session</code> column needs first some explanation of <strong>session</strong> meaning.<br />
 A <strong>session</strong> is a group of user interactions with the website or app that take place within 30 minutes. So let's say you opened Noon app at 8:00 PM and start viewing items until 8:29 PM. All events that have been recorded during this time will be given a single <strong>session</strong> reference number. And when you open Noon again the next day it will be considered as a new session and use a new distinct reference number. See how the <code>user id</code> <code>saleh</code> got a new <code>user session</code> reference number after coming back on 2019/1/3.</li>
 </ul>
-<h2 id="Empty-vlaues">Empty vlaues<a class="anchor-link" href="#Empty-vlaues"> </a></h2><p>If you look back at row number 5 you will see that <code>brand</code> cell is <strong><em>NaN</em></strong>. Nan is actually not a brand, it simply means empty value. Sometimes you will see <strong><em>null</em></strong> instead but they have the same meaning.</p>
+<h3 id="Empty-vlaues">Empty vlaues<a class="anchor-link" href="#Empty-vlaues"> </a></h3><p>If you look back at row number 5 you will see that <code>brand</code> cell is <strong><em>NaN</em></strong>. Nan is actually not a brand, it simply means empty value. Sometimes you will see <strong><em>null</em></strong> instead but they have the same meaning.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr />
+<h2 id="Let-us-explore-our-data">Let us explore our data<a class="anchor-link" href="#Let-us-explore-our-data"> </a></h2><p>We're going first to look at our data structure and prepare the data for analysis.</p>
 
 </div>
 </div>
@@ -294,15 +302,8 @@ A <strong>session</strong> is a group of user interactions with the website or a
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><div class="flash flash-success">
     <svg class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v7.736a.75.75 0 101.5 0V1.75A1.75 1.75 0 0011.25 0h-8.5A1.75 1.75 0 001 1.75v11.5c0 .966.784 1.75 1.75 1.75h3.17a.75.75 0 000-1.5H2.75a.25.25 0 01-.25-.25V1.75zM4.75 4a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM4 7.75A.75.75 0 014.75 7h2a.75.75 0 010 1.5h-2A.75.75 0 014 7.75zm11.774 3.537a.75.75 0 00-1.048-1.074L10.7 14.145 9.281 12.72a.75.75 0 00-1.062 1.058l1.943 1.95a.75.75 0 001.055.008l4.557-4.45z"></path></svg>
-    <strong>Tip: </strong>Non-technicals can skip codes in the balck boxes and read outputs (results) of the code in the purple boxes under the code.
-</div>----</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Let's-explore-our-data">Let's explore our data<a class="anchor-link" href="#Let's-explore-our-data"> </a></h2><p>We're going first to look at our data structure and prepare the data for analysis.</p>
+    <strong>Tip: </strong>Non-technicals can skip codes in the black boxes and read outputs (results) of the code under it.
+</div></p>
 
 </div>
 </div>
@@ -450,7 +451,7 @@ A <strong>session</strong> is a group of user interactions with the website or a
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>&nbsp;<br />
-The dataset has 9 columns and over 20M rows, each row contains users' actions like adding items to the cart or viewing an item. At a glance, we see that our dataset needs some manipulation and cleaning. The <code>brand</code> column has empty values, but we will check in a minute how many empty cells are out there.<br />
+The dataset has 9 columns, each row contains users' actions like adding items to the cart or viewing an item. At a glance, we see that our dataset needs some manipulation and cleaning. The <code>brand</code> column has empty values, but we will check in a minute how many empty cells are out there.<br />
 Now let's see columns data type. It's important to make sure that data are given the right type so our tools don't mess up when dealing with data.</p>
 
 </div>
@@ -848,7 +849,7 @@ Therefore, we will build our analysis around that and try to find insights that 
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>which is below any industry average. For more on average conversion rate by industry check out <a href="https://www.invespcro.com/blog/the-average-website-conversion-rate-by-industry/">this</a> informative post.</p>
+<p>Which is below any industry average. For more on average conversion rate by industry check out <a href="https://www.invespcro.com/blog/the-average-website-conversion-rate-by-industry/">this</a> informative post.</p>
 <hr />
 <p>&nbsp;</p>
 
