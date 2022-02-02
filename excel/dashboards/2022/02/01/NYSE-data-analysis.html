@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -226,12 +226,64 @@ Laslty, I used the wonderful pivot table tool, to get <strong><em>average, media
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr />
-<h2 id="Building-dynamic-predection-dahsboard">Building dynamic predection dahsboard<a class="anchor-link" href="#Building-dynamic-predection-dahsboard"> </a></h2><p>Udacity required me to build two dynamic dashboards:</p>
+<h2 id="Building-dynamic-dahsboard-in-Excel">Building dynamic dahsboard in Excel<a class="anchor-link" href="#Building-dynamic-dahsboard-in-Excel"> </a></h2><p>Udacity required me to build two dynamic dashboards:</p>
 <ul>
 <li>P/L (Profit and loss) dahsboard.</li>
-<li>Predection analysis dashboard.   </li>
+<li>Forecast analysis dashboard with three case scenarios.   </li>
 </ul>
 <p>A dynamic dashboard means that the user can choose the company symbol and read P/L or predections for any company individualy. The predection dashboard predects how a company would perform in the next two years.</p>
+<h3 id="P/L-statment-dashboard">P/L statment dashboard<a class="anchor-link" href="#P/L-statment-dashboard"> </a></h3><p>This dashboard is simple, I just broguht the data from dataset sheet into each cell using <code>INDEX</code> and <code>MATCH</code> functions and used <code>Ctrl</code>+<code>Shift</code>+<code>Enter</code> to turn it to an array formula.<br />
+Try it your self:<br />
+&emsp;</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<iframe width="900" height="370" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=946CEB56A706EBDB%219613&amp;authkey=%21AJt2pyGN0wVXNN4&amp;em=2&amp;wdAllowInteractivity=False&amp;Item=profit_loss_dashboard&amp;wdInConfigurator=True"></iframe>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&emsp;</p>
+<h2 id="Forecast-dashboard">Forecast dashboard<a class="anchor-link" href="#Forecast-dashboard"> </a></h2><p>This dashboared is deffirent. Here I'm required to build a dynamic dashboard that can show each indevidual company forecast with:</p>
+<ul>
+<li>Three scenarios: <em>week</em>, <em>base</em>, and <em>strong</em> scenario.</li>
+<li>Operating scenarios</li>
+</ul>
+<p>First of I built the ratios table like <strong>Gross margin</strong> and <strong>Revenue growth</strong> percetages, because assumptions will be built on ratios from past years. Then under that table I built the <em>operating scenario</em> table (sensitivty analysis). I could've implement this table in the final formula but this will not allow the users to read ratios when they need it.
+Finaly, I built the assumption table with past data as a final result.
+In all tables I used <code>INDEX</code>, <code>OFFSET</code> and <code>MATCH</code> but in a boolean way. This is an example of a formula from one of the cells.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>excel
+{=INDEX(total_revenue,MATCH(1,($F$5=symbols)*(G$8=years),0))}</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&emsp; 
+This is the forecast dashboard, give it a try.
+&emsp;</p>
+<iframe width="900" height="813" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=946CEB56A706EBDB%219613&amp;authkey=%21AJt2pyGN0wVXNN4&amp;em=2&amp;wdAllowInteractivity=False&amp;Item=forecast_dashboard&amp;wdHideGridlines=True&amp;wdInConfigurator=True"></iframe>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&emsp; 
+&emsp;<br />
+I you would like to play with the file your self <a href="https://1drv.ms/x/s!AtvrBqdW62yUyw1J0gD7Z5hDorfQ?e=mmCYL1">Click here</a> to open the full file on OneDrive.<br />
+If you have any qustion please contact me on my <a href="https://www.linkedin.com/in/saleh-alhodaif">LinkedIn</a> or <a href="https://twitter.com/salehalhodaif2">Twitter</a></p>
 
 </div>
 </div>
