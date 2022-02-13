@@ -10,14 +10,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A project for my Udacity certificate in business analysis" />
 <meta property="og:description" content="A project for my Udacity certificate in business analysis" />
-<link rel="canonical" href="https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/08/NYSE-data-analysis.html" />
-<meta property="og:url" content="https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/08/NYSE-data-analysis.html" />
+<link rel="canonical" href="https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/12/NYSE-data-analysis.html" />
+<meta property="og:url" content="https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/12/NYSE-data-analysis.html" />
 <meta property="og:site_name" content="Saleh Alhodaif Portfolio" />
-<meta property="og:image" content="https://saaleh2.github.io/ALHODAIF-Portfolio/images/dashboard_icon.webp" />
+<meta property="og:image" content="https://saaleh2.github.io/ALHODAIF-Portfolio/images/ecommerce-analytics.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-08T00:00:00-06:00" />
+<meta property="article:published_time" content="2022-02-12T00:00:00-06:00" />
 <script type="application/ld+json">
-{"datePublished":"2022-02-08T00:00:00-06:00","url":"https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/08/NYSE-data-analysis.html","@type":"BlogPosting","image":"https://saaleh2.github.io/ALHODAIF-Portfolio/images/dashboard_icon.webp","headline":"Building Excel dashboard using NYSE data","dateModified":"2022-02-08T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/08/NYSE-data-analysis.html"},"description":"A project for my Udacity certificate in business analysis","@context":"https://schema.org"}</script>
+{"datePublished":"2022-02-12T00:00:00-06:00","url":"https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/12/NYSE-data-analysis.html","@type":"BlogPosting","image":"https://saaleh2.github.io/ALHODAIF-Portfolio/images/ecommerce-analytics.jpg","headline":"Building Excel dashboard using NYSE data","dateModified":"2022-02-12T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://saaleh2.github.io/ALHODAIF-Portfolio/excel/dashboards/2022/02/12/NYSE-data-analysis.html"},"description":"A project for my Udacity certificate in business analysis","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ALHODAIF-Portfolio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://saaleh2.github.io/ALHODAIF-Portfolio/feed.xml" title="Saleh Alhodaif Portfolio" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -89,8 +89,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Building Excel dashboard using NYSE data</h1><p class="page-description">A project for my Udacity certificate in business analysis</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-08T00:00:00-06:00" itemprop="datePublished">
-        Feb 8, 2022
+    <h1 class="post-title p-name" itemprop="name headline">Building Excel dashboard using NYSE data</h1><p class="page-description">A project for my Udacity certificate in business analysis</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-12T00:00:00-06:00" itemprop="datePublished">
+        Feb 12, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -126,9 +126,9 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This project is from my Udacityies' "Business Analysis" course last year. Udacity famously known for thair project base courses. Meaning that candidates can only get thair certificate if they apply what they have learned in real life projects. Candidates projects get checked by experts to evaluate thair work and make sure they have fulfil Udacityies' requirments.</p>
-<p>This project uses NYSE dataset for over 450 companies. It includs companies' financials data for four years, period date, sector, and industory.<br />
-Here's a look at dataset head:</p>
+<p>This project is from my Udacityies' "Business Analysis" course last year. Udacity has famously known for thair project-based courses. Meaning that candidates can only get thair certificate if they apply what they have learned in real-life projects. Candidates' projects get checked by experts to evaluate their work and make sure they have fulfilled Udacityies' requirements.</p>
+<p>This project uses the NYSE dataset for over 450 companies. It includes companies' financials data for four years, period date, sector, and industry.<br />
+Here's a look at the dataset head:</p>
 
 </div>
 </div>
@@ -141,17 +141,17 @@ Here's a look at dataset head:</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To pass this project I've been asked to attain two requirments:</p>
+<p>To pass this project I've been asked to attain two requirements:</p>
 <ul>
-<li>Find an insight from the data and tell a story about it through presntation.</li>
+<li>Find insights from the data and tell a story about it through a presentation.</li>
 <li>Build a dynamic financial dashboard in excel.</li>
 </ul>
-<h2 id="Find-insights-in-the-data">Find insights in the data<a class="anchor-link" href="#Find-insights-in-the-data"> </a></h2><p>The dataset includes financial data from 2012 to 2016. The first thing came to my mind of that period is when oil price hit 120$ in 2012, and then fall down in 2015.<br />
-I was wondering how airline industy did during that period. Why airline? because during that time I was studying in China and I've noticed that airline ticket prices were geting more and more expensive. So I wanted to see if there's a correlation between ticket prices and oil prices to confirm my hypothesis. In general, if oil prices goes up or down it effects many aspects of the global economy, some sectors benifit from high prices but most of them benifit from lower prices. my qustion was <strong>"how was airline companies' financial perfomance during that period?"</strong><br />
-My assumtion was that high oil prices will increase the cost of airline opratoins, which therefore increase the price of tickets. High ticket prices lead to lower demand and therefore lower profits.</p>
-<h3 id="Extracting-EBIT-from-data">Extracting EBIT from data<a class="anchor-link" href="#Extracting-EBIT-from-data"> </a></h3><p>The main benchmarks I used to answer my qustion is <strong>total revenue</strong> and <strong>EBIT</strong> (earnings before interst and tax). There's other factors that could tell you about companyies perfomance, but these two are good for my qustion. We don't have EBIT in the dataset, But luckly we have the row data to extract <strong>EBIT</strong>.<br />
+<h2 id="Find-insights-in-the-data">Find insights in the data<a class="anchor-link" href="#Find-insights-in-the-data"> </a></h2><p>The dataset includes financial data from 2012 to 2016. The first thing that came to my mind of that period is when the oil price hit 120$ in 2012 and then fell in 2015.<br />
+I was wondering how the airline industry did during that period. Why airline? because during that time I was studying in China and I've noticed that airline ticket prices were getting more and more expensive. So I wanted to see if there's a correlation between ticket prices and oil prices to confirm my hypothesis. In general, if oil prices go up or down it affects many aspects of the global economy, some sectors benefit from high prices but most of them benefit from lower prices. my question was <strong>"how was airline companies' financial performance during that period?"</strong><br />
+My assumption was that high oil prices will increase the cost of airline operations, which therefore increases the price of tickets. High ticket prices lead to lower demand and therefore lower profits.</p>
+<h3 id="Extracting-EBIT-from-data">Extracting EBIT from data<a class="anchor-link" href="#Extracting-EBIT-from-data"> </a></h3><p>The main benchmarks I used to answer my question are <strong>total revenue</strong> and <strong>EBIT</strong> (earnings before interest and tax). There are other factors that could tell you about companies' performance, but these two are good for my question. We don't have EBIT in the dataset, But luckily we have the raw data to extract <strong>EBIT</strong>.<br />
 To do that, First I found the <code>Gross Profit</code> by subtracting <code>Cost of Goods Sold</code> from <code>Total Revenue</code> then we get <strong>EBIT</strong> by subtracting <code>Sales, General and Admin</code> from <code>Gross Profit</code>.<br />
-Laslty, I used the wonderful pivot table tool, to get <strong><em>average, median,</em></strong> and <strong><em>standard devistion</em></strong> of the two benchmarks mentioned earlier. Using them all together will give us more accurate insight.</p>
+Lastly, I used the wonderful pivot table tool, to get <strong><em>average, median,</em></strong>, and <strong><em>standard deviation</em></strong> of the two benchmarks mentioned earlier. Using them all together will give us more accurate insight.</p>
 <p>Here's the result on excel:</p>
 <ul>
 <li>Average EBIT &amp; revenue<br />
@@ -207,10 +207,10 @@ Laslty, I used the wonderful pivot table tool, to get <strong><em>average, media
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr />
 <p>&emsp;</p>
-<p>Here's my insights in clean slides:<br />
+<p>Here are my insights in clean slides:<br />
 <div class="Toast">
    <span class="Toast-icon"><svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
-   <span class="Toast-content">Use full screen botton in the lower right corner.</span>
+   <span class="Toast-content">Use the full-screen button in the lower right corner.</span>
 </div>
 </p>
 
@@ -226,14 +226,14 @@ Laslty, I used the wonderful pivot table tool, to get <strong><em>average, media
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr />
-<h2 id="Building-dynamic-dahsboard-in-Excel">Building dynamic dahsboard in Excel<a class="anchor-link" href="#Building-dynamic-dahsboard-in-Excel"> </a></h2><p>Udacity required me to build two dynamic dashboards:</p>
+<h2 id="Building-dynamic-dashboard-in-Excel">Building dynamic dashboard in Excel<a class="anchor-link" href="#Building-dynamic-dashboard-in-Excel"> </a></h2><p>Udacity required me to build two dynamic dashboards:</p>
 <ul>
-<li>P/L (Profit and loss) dahsboard.</li>
+<li>P/L (Profit and loss) dashboard.</li>
 <li>Forecast analysis dashboard with three case scenarios.   </li>
 </ul>
-<p>A dynamic dashboard means that the user can choose the company symbol and read P/L or predections for any company individualy. The predection dashboard predects how a company would perform in the next two years.</p>
-<h3 id="P/L-statment-dashboard">P/L statment dashboard<a class="anchor-link" href="#P/L-statment-dashboard"> </a></h3><p>This dashboard is simple, I just broguht the data from dataset sheet into each cell using <code>INDEX</code> and <code>MATCH</code> functions and used <code>Ctrl</code>+<code>Shift</code>+<code>Enter</code> to turn it to an array formula.<br />
-Try it your self:<br />
+<p>A dynamic dashboard means that the user can choose the company symbol and read P/L or predictions for any company individually. The prediction dashboard predicts how a company would perform in the next two years.</p>
+<h3 id="P/L-statment-dashboard">P/L statment dashboard<a class="anchor-link" href="#P/L-statment-dashboard"> </a></h3><p>This dashboard is simple, I just brought the data from the dataset sheet into each cell using <code>INDEX</code> and <code>MATCH</code> functions and used <code>Ctrl</code>+<code>Shift</code>+<code>Enter</code> to turn it into an array formula.<br />
+Try it yourself:<br />
 &emsp;</p>
 
 </div>
@@ -248,14 +248,14 @@ Try it your self:<br />
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>&emsp;</p>
-<h2 id="Forecast-dashboard">Forecast dashboard<a class="anchor-link" href="#Forecast-dashboard"> </a></h2><p>This dashboared is deffirent. Here I'm required to build a dynamic dashboard that can show each indevidual company forecast with:</p>
+<h2 id="Forecast-dashboard">Forecast dashboard<a class="anchor-link" href="#Forecast-dashboard"> </a></h2><p>This dashboard is different. Here I'm required to build a dynamic dashboard that can show each company forecast with:</p>
 <ul>
 <li>Three scenarios: <em>week</em>, <em>base</em>, and <em>strong</em> scenario.</li>
 <li>Operating scenarios</li>
 </ul>
-<p>First of I built the ratios table like <strong>Gross margin</strong> and <strong>Revenue growth</strong> percetages, because assumptions will be built on ratios from past years. Then under that table I built the <em>operating scenario</em> table (sensitivty analysis). I could've implement this table in the final formula but this will not allow the users to read ratios when they need it.
-Finaly, I built the assumption table with past data as a final result.
-In all tables I used <code>INDEX</code>, <code>OFFSET</code> and <code>MATCH</code> but in a boolean way. This is an example of a formula from one of the cells.</p>
+<p>First, I created the ratios table like <strong>Gross margin</strong> and <strong>Revenue growth</strong> percentages because assumptions will be extracted from past years' ratios. Then under that table, I created the <em>operating scenario</em> table (sensitivity analysis). I could've implemented this table in the final formula but this will not allow the users to read ratios when they need it.
+Finally, I built the assumption table with past data as a final result.
+In all tables, I used <code>INDEX</code>, <code>OFFSET</code>, and <code>MATCH</code> but in a boolean way. This is an example of a formula from one of the cells:</p>
 
 </div>
 </div>
@@ -263,8 +263,7 @@ In all tables I used <code>INDEX</code>, <code>OFFSET</code> and <code>MATCH</co
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-<pre><code>excel
-{=INDEX(total_revenue,MATCH(1,($F$5=symbols)*(G$8=years),0))}</code></pre>
+<pre><code>{=INDEX(total_revenue,MATCH(1,($F$5=symbols)*(G$8=years),0))}</code></pre>
 
 </div>
 </div>
@@ -272,7 +271,7 @@ In all tables I used <code>INDEX</code>, <code>OFFSET</code> and <code>MATCH</co
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>&emsp; 
-This is the forecast dashboard, give it a try.
+This is the forecasting dashboard, give it a try.
 &emsp;</p>
 <iframe width="900" height="813" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=946CEB56A706EBDB%219613&amp;authkey=%21AJt2pyGN0wVXNN4&amp;em=2&amp;wdAllowInteractivity=False&amp;Item=forecast_dashboard&amp;wdHideGridlines=True&amp;wdInConfigurator=True"></iframe>
 </div>
@@ -282,8 +281,8 @@ This is the forecast dashboard, give it a try.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>&emsp; 
 &emsp;<br />
-I you would like to play with the file your self <a href="https://1drv.ms/x/s!AtvrBqdW62yUyw1J0gD7Z5hDorfQ?e=mmCYL1">Click here</a> to open the full file on OneDrive.<br />
-If you have any qustion please contact me on my <a href="https://www.linkedin.com/in/saleh-alhodaif">LinkedIn</a> or <a href="https://twitter.com/salehalhodaif2">Twitter</a></p>
+If you would like to play with the file yourself <a href="https://1drv.ms/x/s!AtvrBqdW62yUyw1J0gD7Z5hDorfQ?e=mmCYL1">Click here</a> to open the full file on OneDrive.<br />
+If you have any question please contact me on my <a href="https://www.linkedin.com/in/saleh-alhodaif">LinkedIn</a> or <a href="https://twitter.com/salehalhodaif2">Twitter</a></p>
 
 </div>
 </div>
@@ -300,7 +299,7 @@ If you have any qustion please contact me on my <a href="https://www.linkedin.co
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/ALHODAIF-Portfolio/excel/dashboards/2022/02/08/NYSE-data-analysis.html" hidden></a>
+</script><a class="u-url" href="/ALHODAIF-Portfolio/excel/dashboards/2022/02/12/NYSE-data-analysis.html" hidden></a>
 </article>
 
       </div>
